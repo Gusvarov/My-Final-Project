@@ -616,3 +616,11 @@ footer hr {
 .other a:hover {
     color: #9ca4af;
 }
+
+/* @media (max-width: 650px) {
+    .art, .about, .products, .pricing, .full-size, .services, .contact {
+        width: 400px;
+        position: relative;
+        display: block;
+    }
+} */
