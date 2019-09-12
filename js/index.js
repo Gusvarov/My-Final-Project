@@ -14,3 +14,7 @@
 //  $('animated').click(function() {
 //         $('section').addClass('animated fadeInLeft');
 //     });
+
+// $(document).ready(function() {
+//   $('img').addClass('animated flash');
+// })

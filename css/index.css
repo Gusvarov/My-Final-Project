@@ -16,8 +16,10 @@ header {
     z-index: 1;
 }
 
-.main-link:hover {
-    color: #fff;
+a:hover {
+    color: #000000;
+    background-color: transparent;
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -59,6 +61,22 @@ header {
     color: #000000;
     background-color: #FFFFFF;
     cursor: pointer;
+}
+
+.carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+}
+
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
 }
 
 .main-link {
@@ -251,6 +269,12 @@ a .section-button:hover {
     border: 3px solid #17bed2;
     padding: 30px 35px;
     background: #17bed2;
+    font-size: 22px;
+}
+
+.btn.btn-link {
+    text-decoration: none;
+    color: #fff;
     font-size: 22px;
 }
 
