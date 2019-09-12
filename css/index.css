@@ -9,10 +9,16 @@ body {
 }
 
 header {
-    height: 100vh;
+    height: 100px;
     width: 100%;
-    background: url("../img/1920x1080/background-second.jpg") no-repeat center;
-    background-size: cover;
+    background-color:#515769;
+    position: fixed;
+    z-index: 1;
+}
+
+.main-link:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 .main {
@@ -20,6 +26,39 @@ header {
     display: flex;
     justify-content: space-around;
     height: 10%;
+}
+
+#carouselExampleControls {
+    position: relative;
+}
+
+#carouselExampleControls h1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+#carouselExampleControls button {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    padding: 15px 25px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    width: 150px;
+    color: #ffffff;
+    margin-top: 20px;
+    transition: all ease-in 0.2s;
+    background-color: transparent;
+}
+
+#carouselExampleControls button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .main-link {
@@ -32,7 +71,7 @@ header {
     list-style-type: none;
     display: inline-block;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 13px;
     font-weight: 700;
 }
@@ -624,3 +663,4 @@ footer hr {
         display: block;
     }
 } */
+
