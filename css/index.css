@@ -9,12 +9,11 @@ body {
     max-width: 1500px;
 }
 
-header {
-    height: 100px;
-    width: 1500px;
-    background-color:#515769;
+.navbar {
     position: fixed;
     z-index: 1;
+    max-width: 1500px;
+    text-transform: uppercase;
 }
 
 a:hover {
@@ -519,7 +518,7 @@ a .section-button:hover {
 
 .services {
     width: 100%;
-    height: 900px;
+    height: 960px;
     background-color: #fafafa;
     margin: 0 auto;
     padding-top: 100px;
@@ -556,17 +555,6 @@ a .section-button:hover {
     width: 380px;
     background-color: #fff;
     margin-left: 3px;
-    padding-left: 30px;
-    padding-top: 50px;
-
-}
-
-.block-1 {
-    height: 252px;
-    width: 380px;
-    background-color: #fff;
-    margin-left: 3px;
-    margin-top: -250px;
     padding-left: 30px;
     padding-top: 50px;
 }
@@ -681,15 +669,49 @@ footer hr {
     color: #9ca4af;
 }
 
-/* @media (max-width: 650px) {
-    .art, .about, .products, .pricing, .full-size, .services, .contact {
-        width: 400px;
-        position: relative;
-        display: block;
-    }
-}*/
-
 @media (max-width: 650px) {
+    #carouselExampleControls {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+#carouselExampleControls h1 {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+#carouselExampleControls button {
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    padding: 5px 15px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    width: 150px;
+    color: #ffffff;
+    margin-top: 20px;
+    transition: all ease-in 0.2s;
+    background-color: transparent;
+}
+.carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    left: 10px;
+}
+
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    right: 10px;
+}
+
    .art {
     height: 2200px;
     width: 1500px;
@@ -821,7 +843,7 @@ footer hr {
 }
 .full-size {
     height: 100%;
-    width: 100%;
+    width: 300px;
 }
 
 .work {
@@ -834,6 +856,10 @@ footer hr {
     margin-left: 20px;
     margin-top: 20px;
     width: 320px;
+}
+
+#first-work-img {
+    height: 400px;
 }
 
 .full-size hr {
@@ -851,25 +877,336 @@ footer hr {
     margin-bottom: -200px;
 }
 .services {
-    width: 500px;
-    height: 1500px;
+    width: 540px;
+    height: 2000px;
     background-color: #fafafa;
-    margin: 0 auto;
     padding-top: 100px;
     margin-top: 100px;
 }
 .service {
     width: 256px;
+    margin-left: -20px;
+    text-align: left;
+    box-sizing: border-box;
 }
 
 .service-1 {
     padding-top: 50px;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
-    flex-wrap: wrap;
     width: 500px;
+    height: 2000px;
+
+}
+.block {
+    height: 252px;
+    width: 380px;
+    background-color: #fff;
+    margin-left: 3px;
+    padding-left: 30px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+.contact {
+    width: 1348px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;;
+    margin-bottom: 500px;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.contacts {
+    width: 390px;
+    height: 179px;
+    margin-bottom: 100px;
+}
+.separator {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+.other {
+    width: 200px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+}
+@media ( max-width: 1045px ) {
+    #carouselExampleControls {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+#carouselExampleControls h1 {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+#carouselExampleControls button {
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    padding: 5px 15px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    width: 150px;
+    color: #ffffff;
+    margin-top: 20px;
+    transition: all ease-in 0.2s;
+    background-color: transparent;
+}
+.carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    left: 10px;
+}
+
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    right: 10px;
+}
+
+   .art {
+    height: 2200px;
+    width: 1500px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    align-items:flex-start;
+    flex-direction:column;
+    margin-top: -200px;
+}
+.art-text {
+    width: 270px;
+    color: #aba7aa;
+}
+
+.art-title {
+    color: #515769;
+}
+
+.art-main-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.art-main-2 {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+}
+
+.art-main-3 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.about {
     height: 1000px;
-    margin: auto;
+    background-color: #fafafa;
+}
+
+.row {
+    height: 510px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.container {
+    max-width: 1170px;
+    height: 510px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: auto;
+    align-content: center;
+}
+
+.column-left {
+    height: 215px;
+    width: 450px;
+}
+.column-right {
+    height: 215px;
+    width: 450px;
+}
+.products {
+    width: 1348px;
+    height: 2200px;
+    margin: 0 auto;
+    padding-top: 170px;
+}
+
+.products-up {
+    width: 585px;
+    height: 114px;
+    margin-top: -100px;
+}
+
+.products-main {
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.main-1 {
+    margin-top: -200px;
+}
+.main-2 {
+    margin-top: -400px;
+}
+.main-3 {
+    margin-top: -400px;
+} .pricing {
+    width: 400px;
+    height: 1500px;
+    background-color: #fafafa;
+    margin-top: -150px;
+}
+.pricing-container {
+    width: 400px;
+    height: 1500px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0 auto;
+    padding-top: 150px;
+}
+
+.pricing-column {
+    width: 380px;
+    height: 460px;
+    background-color: #fff;
+    padding-top: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.pricing-column-2 {
+    width: 380px;
+    height: 460px;
+    background-color: #fff;
+    padding-top: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.full-size {
+    height: 100%;
+    width: 300px;
+}
+
+.work {
+    width: 320px;
+    height: 1800px;
+    padding-top: 75px;
+}
+
+.work img {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 320px;
+}
+
+#first-work-img {
+    height: 400px;
+}
+
+.full-size hr {
+    width: 100%;
+    opacity: 0.2;
+    margin-top: 80px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 2000px;
+    margin-top: -200px;
+    margin-bottom: -200px;
+}
+.services {
+    width: 540px;
+    height: 2000px;
+    background-color: #fafafa;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+.service {
+    width: 256px;
+    margin-left: -20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.service-1 {
+    padding-top: 50px;
+    flex-direction: column;
+    display: flex;
+    width: 500px;
+    height: 2000px;
+
+}
+.block {
+    height: 252px;
+    width: 380px;
+    background-color: #fff;
+    margin-left: 3px;
+    padding-left: 30px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+.contact {
+    width: 1348px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;;
+    margin-bottom: 500px;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.contacts {
+    width: 390px;
+    height: 179px;
+    margin-bottom: 100px;
+}
+.separator {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+.other {
+    width: 200px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 }
 
