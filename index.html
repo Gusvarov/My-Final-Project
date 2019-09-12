@@ -119,7 +119,7 @@
                     </p>
                 </div>
                 <div class="art-img">
-                    <img src="img/500x500/clean-design.jpg" alt="clean design" class="wow fadeInDown" data-wow-duration="1s">
+                    <img src="img/500x500/clean-design.jpg" alt="clean design" class="wow fadeIn" data-wow-duration="1.5s">
                 </div>
             </div>
             <div class="art-main-3">
@@ -169,7 +169,7 @@
                                 </button>
                             </h2>
                             </div>
-                            <div id="collapseOne" class="collapse show p-3 mb-2 bg-info text-white aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div id="collapseOne" class="collapse show p-3 mb-2 bg-info text-white aria-labelledby=headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
                                 </div>
@@ -233,7 +233,7 @@
                         Lorem ipsum dolor sit amet consectetur adipiscing
                         elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor
                     </p>
-                    <a href="#" class="readmore">
+                    <a href="#" class="readmore" data-toggle="modal" data-target="#exampleModal">
                         Read More
                     </a>
                 </div>
@@ -251,7 +251,7 @@
                         Lorem ipsum dolor sit amet consectetur adipiscing
                         elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor
                     </p>
-                    <a href="#" class="readmore">
+                    <a href="#" class="readmore" data-toggle="modal" data-target="#exampleModal">
                         Read More
                     </a>
                 </div>
@@ -269,7 +269,7 @@
                         Lorem ipsum dolor sit amet consectetur adipiscing
                         elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor
                     </p>
-                    <a href="#" class="readmore">
+                    <a href="#" class="readmore" data-toggle="modal" data-target="#exampleModal">
                         Read More
                     </a>
                 </div>
@@ -598,6 +598,32 @@
                 </a>
             </div>
         </footer>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing
+                        elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor
+                        Lorem ipsum dolor sit amet consectetur adipiscing
+                        elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor
+                        Lorem ipsum dolor sit amet consectetur adipiscing
+                        elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor
+                    </p>
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
         <script src="js/wow.min.js"></script>
               <script>
                 new WOW().init();

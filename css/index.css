@@ -34,6 +34,7 @@ a:hover {
 #carouselExampleControls {
     position: relative;
     height: 1000px;
+    width: 100%;
 }
 
 #carouselExampleControls h1 {
@@ -295,7 +296,6 @@ a .section-button:hover {
     height: 100%;
     display: flex;
     justify-content: space-around;
-
 }
 
 .products-main p {
@@ -546,9 +546,9 @@ a .section-button:hover {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    width: 1348px;
+    width: 1150px;
     height: 860px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .block {
@@ -687,20 +687,104 @@ footer hr {
         position: relative;
         display: block;
     }
-} */
+}*/
 
 @media (max-width: 1330px) {
-    .art-main-1 {
-        display: grid;
-        grid-template-columns: 500px;
-    }
-    .art-main-2 {
-        display: grid;
-        grid-template-columns: 500px;
-    }
-    .art-main-3 {
-        display: grid;
-        grid-template-columns: 500px;
-    }
+   .art {
+    height: 2200px;
+    width: 1500px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    align-items:flex-start;
+    flex-direction:column;
+    margin-top: -200px;
+}
+.art-text {
+    width: 270px;
+    color: #aba7aa;
+}
+
+.art-title {
+    color: #515769;
+}
+
+.art-main-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.art-main-2 {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+}
+
+.art-main-3 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.about {
+    height: 1000px;
+    background-color: #fafafa;
+}
+
+.row {
+    height: 510px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.container {
+    max-width: 1170px;
+    height: 510px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: auto;
+    align-content: center;
+}
+
+.column-left {
+    height: 215px;
+    width: 450px;
+}
+.column-right {
+    height: 215px;
+    width: 450px;
+}
+.products {
+    width: 1348px;
+    height: 2200px;
+    margin: 0 auto;
+    padding-top: 170px;
+}
+
+.products-up {
+    width: 585px;
+    height: 114px;
+    margin-top: -100px;
+}
+
+.products-main {
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.main-1 {
+    margin-top: -200px;
+}
+.main-2 {
+    margin-top: -400px;
+}
+.main-3 {
+    margin-top: -400px;
+}
 }
 
