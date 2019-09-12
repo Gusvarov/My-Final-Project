@@ -3,14 +3,15 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: sans-serif;
+    max-width: 1500px;
 }
 
 header {
     height: 100px;
-    width: 100%;
+    width: 1500px;
     background-color:#515769;
     position: fixed;
     z-index: 1;
@@ -32,6 +33,7 @@ a:hover {
 
 #carouselExampleControls {
     position: relative;
+    height: 1000px;
 }
 
 #carouselExampleControls h1 {
@@ -159,10 +161,11 @@ a .section-button:hover {
 
 .art {
     height: 795px;
-    width: 70%;
+    width: 1500px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: auto;
 
 }
 
@@ -179,21 +182,18 @@ a .section-button:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-left: 25px;
 }
 
 .art-main-2 {
      display: flex;
      justify-content: space-around;
      flex-direction: column-reverse;
-    margin-left: 25px;
 }
 
 .art-main-3 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-left: 25px;
 }
 
 .about {
@@ -523,6 +523,7 @@ a .section-button:hover {
     background-color: #fafafa;
     margin: 0 auto;
     padding-top: 100px;
+    margin-top: 100px;
 }
 
 .service {
@@ -687,4 +688,19 @@ footer hr {
         display: block;
     }
 } */
+
+@media (max-width: 1330px) {
+    .art-main-1 {
+        display: grid;
+        grid-template-columns: 500px;
+    }
+    .art-main-2 {
+        display: grid;
+        grid-template-columns: 500px;
+    }
+    .art-main-3 {
+        display: grid;
+        grid-template-columns: 500px;
+    }
+}
 
