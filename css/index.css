@@ -188,12 +188,14 @@ a .section-button:hover {
      display: flex;
      justify-content: space-around;
      flex-direction: column-reverse;
+     margin-left: 20px;
 }
 
 .art-main-3 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 .about {
