@@ -669,8 +669,8 @@ footer hr {
     color: #9ca4af;
 }
 
-@media (max-width: 650px) {
-    #carouselExampleControls {
+@media screen and (max-width: 1130px) {
+        #carouselExampleControls {
     position: relative;
     height: 600px;
     width: 100%;
@@ -714,14 +714,12 @@ footer hr {
 
    .art {
     height: 2200px;
-    width: 1500px;
-    box-sizing: border-box;
+    width: 750px;
     display: flex;
     justify-content: space-around;
-    margin-left: auto;
-    align-items:flex-start;
+    margin: auto;
+
     flex-direction:column;
-    margin-top: -200px;
 }
 .art-text {
     width: 270px;
@@ -736,18 +734,21 @@ footer hr {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    margin: auto;
 }
 
 .art-main-2 {
      display: flex;
      justify-content: space-around;
      flex-direction: column;
+     margin: auto;
 }
 
 .art-main-3 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    margin: auto;
 }
 .about {
     height: 1000px;
@@ -756,7 +757,7 @@ footer hr {
 
 .row {
     height: 510px;
-    max-width: 1170px;
+    max-width: 750px;
     margin: 0 auto;
     padding-top: 150px;
 }
@@ -767,29 +768,33 @@ footer hr {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-left: auto;
+    margin: auto;
     align-content: center;
 }
 
 .column-left {
     height: 215px;
     width: 450px;
+    margin: auto;
 }
 .column-right {
     height: 215px;
     width: 450px;
+    margin: auto;
 }
 .products {
-    width: 1348px;
+    width: 750px;
     height: 2200px;
     margin: 0 auto;
     padding-top: 170px;
+    display: block;
 }
 
 .products-up {
     width: 585px;
     height: 114px;
     margin-top: -100px;
+    margin: auto;
 }
 
 .products-main {
@@ -800,18 +805,21 @@ footer hr {
     flex-direction: column;
 }
 .main-1 {
-    margin-top: -200px;
+    margin: auto;
 }
 .main-2 {
-    margin-top: -400px;
+    margin: auto;
 }
 .main-3 {
-    margin-top: -400px;
-} .pricing {
+    margin-bottom: 400px;
+    margin: auto;
+}
+.pricing {
+    margin-top: 250px;
     width: 400px;
     height: 1500px;
     background-color: #fafafa;
-    margin-top: -150px;
+    margin: auto;
 }
 .pricing-container {
     width: 400px;
@@ -821,7 +829,7 @@ footer hr {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 0 auto;
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .pricing-column {
@@ -843,7 +851,8 @@ footer hr {
 }
 .full-size {
     height: 100%;
-    width: 300px;
+    width: 750px;
+    margin: auto;
 }
 
 .work {
@@ -856,6 +865,10 @@ footer hr {
     margin-left: 20px;
     margin-top: 20px;
     width: 320px;
+}
+
+.work p {
+    width: 300px;
 }
 
 #first-work-img {
@@ -872,9 +885,10 @@ footer hr {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    height: 2000px;
-    margin-top: -200px;
-    margin-bottom: -200px;
+    align-items: center;
+    height: 1000px;
+    width: 750px;
+    margin: auto;
 }
 .services {
     width: 540px;
@@ -908,8 +922,8 @@ footer hr {
     margin-bottom: 20px;
 }
 .contact {
-    width: 1348px;
-    height: 500px;
+    width: 750px;
+    height: 300px;
     display: flex;
     justify-content: space-between;;
     margin-bottom: 500px;
@@ -921,11 +935,13 @@ footer hr {
     width: 390px;
     height: 179px;
     margin-bottom: 100px;
+    margin: auto;
 }
 .separator {
     display: flex;
     justify-content: space-around;
-    width: 800px;
+    width: 750px;
+    align-items: center;
     flex-direction: column;
     margin-bottom: 75px;
 }
@@ -939,8 +955,8 @@ footer hr {
     margin-top: 50px;
 }
 }
-@media ( max-width: 1045px ) {
-    #carouselExampleControls {
+@media screen and ( max-width: 675px ) {
+ #carouselExampleControls {
     position: relative;
     height: 600px;
     width: 100%;
@@ -955,7 +971,7 @@ footer hr {
 }
 #carouselExampleControls button {
     position: absolute;
-    top: 23%;
+    top: 21%;
     left: 20%;
     padding: 5px 15px;
     text-align: center;
@@ -984,12 +1000,10 @@ footer hr {
 
    .art {
     height: 2200px;
-    width: 1500px;
+    width: 500px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
-    margin-left: auto;
-    align-items:flex-start;
     flex-direction:column;
     margin-top: -200px;
 }
@@ -1026,19 +1040,16 @@ footer hr {
 
 .row {
     height: 510px;
-    max-width: 1170px;
-    margin: 0 auto;
+    max-width: 500px;
     padding-top: 150px;
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 500px;
     height: 510px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-left: auto;
-    align-content: center;
 }
 
 .column-left {
@@ -1050,10 +1061,9 @@ footer hr {
     width: 450px;
 }
 .products {
-    width: 1348px;
+    width: 500px;
     height: 2200px;
-    margin: 0 auto;
-    padding-top: 170px;
+
 }
 
 .products-up {
@@ -1070,14 +1080,15 @@ footer hr {
     flex-direction: column;
 }
 .main-1 {
-    margin-top: -200px;
+    margin-top: -20px;
 }
 .main-2 {
-    margin-top: -400px;
+    margin-top: -200px;
 }
 .main-3 {
-    margin-top: -400px;
-} .pricing {
+    margin-top: -200px;
+}
+.pricing {
     width: 400px;
     height: 1500px;
     background-color: #fafafa;
@@ -1142,7 +1153,8 @@ footer hr {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    height: 2000px;
+    align-items: baseline;
+    height: 1000px;
     margin-top: -200px;
     margin-bottom: -200px;
 }
@@ -1178,24 +1190,26 @@ footer hr {
     margin-bottom: 20px;
 }
 .contact {
-    width: 1348px;
+    width: 500px;
     height: 500px;
     display: flex;
     justify-content: space-between;;
     margin-bottom: 500px;
     flex-direction: column;
     padding-top: 100px;
+    align-items: baseline;
 }
 
 .contacts {
     width: 390px;
     height: 179px;
     margin-bottom: 100px;
+    align-items: baseline;
 }
 .separator {
     display: flex;
     justify-content: space-around;
-    width: 800px;
+    width: 300px;
     flex-direction: column;
     margin-bottom: 75px;
 }
