@@ -25,6 +25,9 @@
                             <a class="nav-link text-primary" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-primary" href="#art">Features</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-primary" href="#about">About</a>
                         </li>
                         <li class="nav-item">
@@ -76,7 +79,7 @@
             <button>Explore</button>
         </div>
         <main>
-        <div class="art" id="explore">
+        <div class="art" id="art">
             <div class="art-main-1">
                 <div class="art-title">
                     <h1>
@@ -292,7 +295,7 @@
                             50 Users Panels
                         </li>
                     </ul>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#chooseModal">
                         Choose
                     </a>
                 </div>
@@ -320,7 +323,7 @@
                             100 Users Panels
                         </li>
                     </ul>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#chooseModal">
                         Choose
                     </a>
                 </div>
@@ -349,7 +352,7 @@
                             Unlimited Users Panels
                         </li>
                     </ul>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#chooseModal">
                         Choose
                     </a>
                 </div>
@@ -607,6 +610,28 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="chooseModal" tabindex="-1" role="dialog" aria-labelledby="chooseModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title w-100" id="chooseModalLabel">Kits choose</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            If you want to choose one of the Kits
+                            you must sign up, or sign in.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Ok</button>
+                </div>
+            </div>
+        </div>
         <div class="modal fade" id="sign-upModal" tabindex="-1" role="dialog" aria-labelledby="sign-upLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -617,29 +642,29 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form method="POST" action="https://formspree.io/nazikgta24@gmail.com">
+                            <form method="POST" action="https://formspree.io/nazikgta24@gmail.com" id="sign-up-form">
                                 <label>
                                     Your Name:
                                     <br>
-                                    <input type="text" name="user-name">
+                                    <input type="text" name="user-name" class="user-name" required>
                                 </label>
                                 <br>
                                 <label>
                                     Your email
                                     <br>
-                                    <input type="email" name="email">
+                                    <input type="email" name="email" class="email" required>
                                 </label>
                                 <br>
                                 <label>
                                     Your password
                                     <br>
-                                    <input type="password" name="password">
+                                    <input type="password" name="password" class="password" required>
                                 </label>
                                 <br>
                                 <label>
                                     Repeat your password
                                     <br>
-                                        <input type="password" name="repeat-password">
+                                        <input type="password" name="repeat-password" required>
                                 </label>
                              <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -664,7 +689,7 @@
                                 <label>
                                     Your Name:
                                     <br>
-                                    <input type="text" name="user-name">
+                                    <input type="text" name="user-name" required>
                                 </label>
                                 <br>
 
@@ -672,7 +697,7 @@
                                 <label>
                                     Your password
                                     <br>
-                                    <input type="password" name="password">
+                                    <input type="password" name="password" required>
                                 </label>
                                 <br>
                              <div class="modal-footer">
