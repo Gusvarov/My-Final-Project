@@ -671,8 +671,17 @@ footer hr {
     color: #9ca4af;
 }
 
+.modal-body {
+    margin: auto;
+    display: block;
+}
+
+.motal-title {
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 1130px) {
-        #carouselExampleControls {
+#carouselExampleControls {
     position: relative;
     height: 600px;
     width: 100%;
