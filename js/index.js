@@ -18,3 +18,5 @@ $(".confirm_password").on("keyup", function() {
     }
 
 });
+
+
