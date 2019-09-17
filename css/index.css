@@ -10,6 +10,37 @@ body {
     max-width: 1500px;
 }
 
+#button {
+  display: inline-block;
+  background-color:#17bed2;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: .3s;
+  z-index: 1000;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
 .navbar {
     position: fixed;
     z-index: 1;
@@ -983,6 +1014,11 @@ footer hr {
 }
 }
 @media screen and ( max-width: 675px ) {
+#button {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+}
  #carouselExampleControls {
     position: relative;
     height: 600px;
