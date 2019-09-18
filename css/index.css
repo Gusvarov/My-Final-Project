@@ -23,6 +23,7 @@ body {
   right: 30px;
   transition: .3s;
   z-index: 1000;
+  visibility: hidden;
 }
 
 #button:hover {
@@ -42,6 +43,31 @@ body {
   font-size: 2em;
   line-height: 50px;
   color: #fff;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #1C1B1B;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 45%;
+    top: 35%;
+    background: url("../img/preloader.gif") no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
 }
 
 .navbar {
@@ -716,6 +742,15 @@ footer hr {
 }
 
 @media screen and (max-width: 1130px) {
+    #page-preloader .spinner {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    background: url("../img/preloader.gif") no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}
 #carouselExampleControls {
     position: relative;
     height: 600px;
@@ -1017,6 +1052,15 @@ footer hr {
 }
 }
 @media screen and ( max-width: 675px ) {
+      #page-preloader .spinner {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    background: url("../img/preloader.gif") no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}
 #button {
     width: 40px;
     height: 40px;
